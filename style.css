@@ -4,7 +4,7 @@
     --gray2: #555555;
     --white: #fff;
     --white2:#fdfcf9;
-    --black: #000;
+    --black: #1f1f1f;
     --violet: #664efc;
 }
 
@@ -17,7 +17,7 @@ body {
 }
 .page, .page-two {
     height: 100vh;
-    padding: 5% 10%;
+    padding: 3% 10%;
 }
 .page-two {
     background-color: var(--white);
