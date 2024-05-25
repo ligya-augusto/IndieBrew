@@ -1,0 +1,161 @@
+:root {
+    --blue: #2604f9;
+    --gray: #5a5a5a;
+    --gray2: #a5a4a4;
+    --white: #fff;
+    --white2:#fdfcf9;
+    --black: #1f1f1f;
+    --violet: #664efc;
+    --light-pink: #f9eef9;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--light-pink);
+    height: 100vh;
+    padding: 3% 10%;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.back-arrow-icon {
+    background-color: #fff;
+    border: 1px solid var(--gray2);
+    border-radius: 6px;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 8px 12px;
+}
+
+main {
+   margin-top: 3%; 
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   align-items: center;
+}
+
+.main-infos {
+    margin-right: 15%;
+}
+
+.main-infos h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.main-text {
+    display: flex;
+    flex-flow: column wrap;
+    
+}
+
+.main-text div {
+    display: flex;
+    margin: 3% 0;
+    gap: 5px;
+    flex-shrink: 1;
+}
+
+.text {
+    color: var(--black);
+    font-weight: 400;
+}
+
+
+.forms {
+    background-color: var(--white);
+    padding: 10%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.forms-title h2 {
+    font-size: 1.2rem;
+    flex-shrink: 1;
+}
+
+.box-form {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 0;
+}
+
+.title-input {
+    color: var(--black);
+    font-weight: 600;
+}
+
+.input {
+    border: 1px solid var(--gray2);
+    padding: 3%;
+    border-radius: 4px;
+    flex-shrink: 1;
+}
+
+.terms {
+    margin-bottom: 5%;
+    flex-shrink: 1;
+}
+
+.check-terms {
+    color: var(--black);
+    font-weight: 500;
+}
+
+.check-terms u {
+    color: var(--violet);
+    font-weight: 800;
+}
+.checkbox {
+    border: 1px solid var(--gray2);
+}
+
+.create-account {
+    border: none;
+    padding: 3%;
+    border-radius: 4px;
+    background-color: var(--violet);
+    color: var(--white);
+    font-weight: 800;
+    flex-shrink: 1;
+}
+
+@media (max-width: 810px) {
+    body {
+        padding: 3%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    .forms {
+        width: 100%;
+    }
+}
+
+@media (max-width: 560px) {
+    .navbar h1 {
+        display: none;
+    }
+    body {
+        padding: 5%;
+    }
+
+    .main-infos h2 {
+        font-size: 2rem;
+    }
+}
