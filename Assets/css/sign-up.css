@@ -154,4 +154,8 @@ main {
     body {
         padding: 5%;
     }
+
+    .main-infos h2 {
+        font-size: 2rem;
+    }
 }
